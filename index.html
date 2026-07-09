@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauté Colla Booster | Isha Empire</title>
+  <meta name="description" content="Beauté Colla Booster dark chocolate collagen drink by Isha Osman, Founder of Isha Empire." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --espresso:#4A3428;
+      --gold:#C9A96E;
+      --ivory:#F8F5F0;
+      --sand:#EAE1D4;
+      --charcoal:#232323;
+      --muted:#796b63;
+      --white:#fff;
+      --rose:#b18a8f;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Poppins,Arial,sans-serif;background:var(--ivory);color:var(--espresso);line-height:1.65}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    .topbar{background:var(--espresso);color:var(--ivory);font-size:13px;text-align:center;padding:9px 16px;letter-spacing:.3px}
+    header{position:sticky;top:0;z-index:20;background:rgba(248,245,240,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(74,52,40,.12)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:'Cormorant Garamond',serif;font-size:30px;letter-spacing:8px;font-weight:700;color:var(--espresso)}
+    .brand small{display:block;font-family:Poppins,sans-serif;font-size:9px;letter-spacing:4px;color:var(--gold);text-align:center;margin-top:-8px}
+    .navlinks{display:flex;gap:22px;font-size:13px;color:var(--muted)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 22px;font-weight:700;border:1px solid transparent;transition:.2s ease;cursor:pointer}
+    .btn-primary{background:var(--espresso);color:var(--ivory);box-shadow:0 14px 30px rgba(74,52,40,.25)}
+    .btn-primary:hover{transform:translateY(-2px);background:#332319}
+    .btn-outline{border-color:rgba(74,52,40,.25);color:var(--espresso);background:rgba(255,255,255,.45)}
+    .hero{padding:84px 0 58px;background:radial-gradient(circle at 20% 10%, #fff 0, transparent 35%),linear-gradient(135deg,#fdfaf7 0%,#f3e9df 55%,#e7d7c8 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+    .eyebrow{display:inline-block;color:var(--gold);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:12px;margin-bottom:14px}
+    h1,h2,h3{font-family:'Cormorant Garamond',serif;line-height:1.05;margin:0;color:var(--espresso)}
+    h1{font-size:clamp(48px,7vw,84px);letter-spacing:1px}
+    .lead{font-size:19px;color:#5e4b41;margin:22px 0 28px;max-width:620px}
+    .hero-card{background:rgba(255,255,255,.58);border:1px solid rgba(201,169,110,.35);padding:20px;border-radius:28px;box-shadow:0 22px 60px rgba(74,52,40,.14)}
+    .hero-card img{border-radius:22px;aspect-ratio:1/1;object-fit:cover}
+    .pillrow{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+    .pill{background:#fff;border:1px solid rgba(201,169,110,.35);border-radius:999px;padding:9px 14px;font-size:13px;color:#5e4b41}
+    section{padding:76px 0}
+    .section-title{text-align:center;margin-bottom:42px}
+    .section-title h2{font-size:clamp(36px,5vw,58px)}
+    .section-title p{max-width:700px;margin:14px auto 0;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:#fff;border:1px solid rgba(74,52,40,.1);border-radius:24px;padding:26px;box-shadow:0 16px 40px rgba(74,52,40,.07)}
+    .icon{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--ivory);color:var(--gold);font-size:22px;margin-bottom:16px;border:1px solid rgba(201,169,110,.35)}
+    .card h3{font-size:26px;margin-bottom:10px}
+    .card p{color:var(--muted);margin:0;font-size:15px}
+    .split{display:grid;grid-template-columns:.95fr 1.05fr;gap:46px;align-items:center}
+    .image-frame{background:#fff;padding:14px;border-radius:28px;border:1px solid rgba(201,169,110,.35);box-shadow:0 22px 50px rgba(74,52,40,.12)}
+    .image-frame img{border-radius:20px;object-fit:cover}
+    .list{display:grid;gap:14px;margin:24px 0}
+    .list-item{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.7);border:1px solid rgba(74,52,40,.08);padding:14px 16px;border-radius:18px;color:#5d4c42}
+    .check{color:var(--gold);font-weight:700}
+    .dark{background:linear-gradient(135deg,#2b1d16,#4A3428);color:var(--ivory)}
+    .dark h2,.dark h3{color:#fff}
+    .dark .section-title p,.dark p{color:#eaded1}
+    .dark .card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);box-shadow:none;color:var(--ivory)}
+    .dark .icon{background:rgba(255,255,255,.1)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .step{padding:22px;background:#fff;border-radius:22px;border:1px solid rgba(74,52,40,.1)}
+    .step-num{font-family:'Cormorant Garamond',serif;font-size:42px;color:var(--gold);line-height:1}
+    .testimonials{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .testimonials img{border-radius:24px;box-shadow:0 18px 45px rgba(74,52,40,.12)}
+    .faq{max-width:860px;margin:auto;display:grid;gap:12px}
+    details{background:#fff;border:1px solid rgba(74,52,40,.1);border-radius:18px;padding:18px 20px}
+    summary{font-weight:700;cursor:pointer;color:var(--espresso)}
+    details p{color:var(--muted);margin-bottom:0}
+    .cta{background:linear-gradient(135deg,#fff,#f1e4d9);text-align:center;padding:86px 0}
+    .cta h2{font-size:clamp(40px,6vw,68px)}
+    .price{font-size:44px;font-weight:800;color:var(--espresso);margin:12px 0 24px}
+    footer{background:#1f1713;color:#e9ded5;padding:44px 0;text-align:center;font-size:14px}
+    footer .brand{color:#fff;margin-bottom:12px}
+    .floating{position:fixed;right:18px;bottom:18px;z-index:50;background:#25D366;color:#fff;border-radius:999px;padding:14px 18px;font-weight:800;box-shadow:0 16px 35px rgba(0,0,0,.25)}
+    .disclaimer{font-size:12px;color:#8c7a70;max-width:900px;margin:20px auto 0;text-align:center}
+    @media(max-width:860px){.navlinks{display:none}.hero{padding-top:52px}.hero-grid,.split{grid-template-columns:1fr}.cards,.steps,.testimonials{grid-template-columns:1fr}.brand{font-size:24px;letter-spacing:5px}section{padding:56px 0}.hero-card{order:-1}.floating{left:16px;right:16px;text-align:center}.topbar{font-size:12px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">ISHA OSMAN | Founder, ISHA EMPIRE — Feel Good. Look Great. Live Better.</div>
+  <header>
+    <div class="container nav">
+      <a href="#top" class="brand">ISHA<small>EMPIRE</small></a>
+      <nav class="navlinks">
+        <a href="#benefit">Kelebihan</a>
+        <a href="#formula">Formula</a>
+        <a href="#cara">Cara Ambil</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-primary" href="https://wa.me/60XXXXXXXXX?text=Hi%20Isha%2C%20saya%20nak%20tanya%20Beaut%C3%A9%20Colla%20Booster">WhatsApp Isha</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Dark Chocolate Collagen Drink</span>
+          <h1>Rahsia rutin glow dari dalam.</h1>
+          <p class="lead">Nampak macam hot chocolate, tapi sebenarnya minuman kolagen harian dengan rasa dark chocolate yang mudah diamalkan — untuk menyokong penjagaan kulit, rambut, kuku dan sendi.</p>
+          <div class="pillrow">
+            <span class="pill">10,000mg Hydrolyzed Collagen*</span>
+            <span class="pill">Type I, II & III</span>
+            <span class="pill">Biotin</span>
+            <span class="pill">Vitamin C</span>
+            <span class="pill">1 scoop sehari</span>
+          </div>
+          <a class="btn btn-primary" href="https://wa.me/60XXXXXXXXX?text=Hi%20Isha%2C%20saya%20berminat%20dengan%20Beaut%C3%A9%20Colla%20Booster">Saya Nak Cuba</a>
+          <a class="btn btn-outline" href="#benefit">Lihat Kelebihan</a>
+        </div>
+        <div class="hero-card">
+          <img src="assets/product-drink.jpg" alt="Beauté Colla Booster bersama minuman coklat" />
+        </div>
+      </div>
+    </section>
+
+    <section id="benefit">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">1 Minuman, Banyak Sokongan</span>
+          <h2>Bukan sekadar untuk kulit.</h2>
+          <p>Kolagen ialah protein penting dalam badan. Apabila usia meningkat, rutin sokongan dari dalam boleh membantu kita menjaga penampilan dan gaya hidup dengan lebih konsisten.</p>
+        </div>
+        <div class="cards">
+          <div class="card"><div class="icon">✨</div><h3>Kulit</h3><p>Menyokong keanjalan, kelembapan dan penampilan kulit yang lebih sihat.</p></div>
+          <div class="card"><div class="icon">💇🏻‍♀️</div><h3>Rambut & Kuku</h3><p>Diperkaya dengan biotin dan mineral untuk menyokong penjagaan rambut serta kuku.</p></div>
+          <div class="card"><div class="icon">🦵</div><h3>Sendi</h3><p>Kolagen Type II dan nutrisi sokongan membantu mengekalkan gaya hidup aktif.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formula" class="dark">
+      <div class="container split">
+        <div class="image-frame"><img src="assets/ingredients.jpg" alt="Kandungan Beauté Colla Booster" /></div>
+        <div>
+          <span class="eyebrow">Formula Premium</span>
+          <h2>Kolagen + Biotin + Nutrisi.</h2>
+          <div class="list">
+            <div class="list-item"><span class="check">✔</span><span>Hydrolyzed Collagen Type I, II & III untuk sokongan kulit, sendi dan tisu badan.</span></div>
+            <div class="list-item"><span class="check">✔</span><span>Biotin, Zinc dan Copper untuk sokongan rambut, kulit dan kuku.</span></div>
+            <div class="list-item"><span class="check">✔</span><span>Vitamin C membantu pembentukan kolagen dalam badan.</span></div>
+            <div class="list-item"><span class="check">✔</span><span>Rasa dark chocolate — sedap, mudah larut dan senang dijadikan rutin.</span></div>
+          </div>
+          <p>*Rujuk label produk untuk maklumat sajian dan kandungan sebenar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Kenapa Kolagen Penting?</span>
+          <h2>Umur makin naik, kolagen semula jadi makin berkurang.</h2>
+          <p class="lead">Bukan tentang mengejar sempurna. Cukuplah untuk rasa lebih terjaga, lebih yakin dan lebih konsisten menjaga diri dari dalam.</p>
+          <div class="list">
+            <div class="list-item"><span class="check">✔</span><span>Sesuai untuk yang mula rasa kulit kurang anjal atau kusam.</span></div>
+            <div class="list-item"><span class="check">✔</span><span>Sesuai untuk rutin harian wanita dan lelaki dewasa.</span></div>
+            <div class="list-item"><span class="check">✔</span><span>Praktikal untuk orang sibuk — hanya 1 scoop sehari.</span></div>
+          </div>
+        </div>
+        <div class="image-frame"><img src="assets/collagen-info.jpg" alt="Apa itu kolagen" /></div>
+      </div>
+    </section>
+
+    <section id="cara" style="background:#fffaf5">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Cara Pengambilan</span>
+          <h2>Simple. Sedap. Konsisten.</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="step-num">01</div><h3>Ambil 1 scoop</h3><p>Gunakan scoop yang disediakan mengikut saiz hidangan pada label.</p></div>
+          <div class="step"><div class="step-num">02</div><h3>Campur air</h3><p>Campurkan dengan air suam/sejuk atau minuman kegemaran.</p></div>
+          <div class="step"><div class="step-num">03</div><h3>Kacau sebati</h3><p>Rasa dark chocolate yang mudah dinikmati setiap hari.</p></div>
+          <div class="step"><div class="step-num">04</div><h3>Amalkan harian</h3><p>Kunci utama ialah rutin kecil yang konsisten.</p></div>
+        </div>
+        <div style="max-width:480px;margin:38px auto 0" class="image-frame"><img src="assets/scoop.jpg" alt="1 scoop Beauté Colla Booster" /></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Customer Sharing</span>
+          <h2>Rutin kecil, pengalaman berbeza.</h2>
+          <p>Gambar perkongsian pengguna. Keputusan mungkin berbeza mengikut individu, gaya hidup dan konsistensi penggunaan.</p>
+        </div>
+        <div class="testimonials">
+          <img src="assets/before-after-skin.jpg" alt="Perkongsian before after kulit" />
+          <img src="assets/before-after-hair.jpg" alt="Perkongsian before after rambut" />
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="dark">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">FAQ</span>
+          <h2>Soalan biasa.</h2>
+        </div>
+        <div class="faq">
+          <details><summary>Bila waktu terbaik untuk minum?</summary><p>Boleh diamalkan pada waktu yang mudah untuk anda konsisten. Ramai memilih pagi atau petang sebagai rutin harian.</p></details>
+          <details><summary>Boleh campur dengan minuman lain?</summary><p>Ya, boleh campur dengan air atau minuman kegemaran. Elakkan bancuhan yang tidak sesuai dengan label produk.</p></details>
+          <details><summary>Sesuai untuk lelaki?</summary><p>Ya, produk kolagen bukan hanya untuk wanita. Ia juga sesuai untuk lelaki dewasa yang mahu menjaga rutin kesihatan, kulit dan sendi.</p></details>
+          <details><summary>Berapa lama nampak perubahan?</summary><p>Setiap orang berbeza. Faktor pemakanan, tidur, air, umur dan konsistensi rutin turut mempengaruhi pengalaman masing-masing.</p></details>
+          <details><summary>Ibu hamil/menyusu boleh ambil?</summary><p>Sila dapatkan nasihat doktor atau ahli farmasi terlebih dahulu, terutama jika hamil, menyusu, ada penyakit tertentu atau sedang mengambil ubat.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <span class="eyebrow">Ready To Start?</span>
+        <h2>Mulakan rutin glow anda hari ini.</h2>
+        <p class="lead" style="margin-left:auto;margin-right:auto">Beauté Colla Booster dikongsikan oleh Isha Osman, Founder of ISHA EMPIRE — Health • Wellness • Beauty • Lifestyle.</p>
+        <div class="price">PM untuk harga promosi</div>
+        <a class="btn btn-primary" href="https://wa.me/60XXXXXXXXX?text=Hi%20Isha%2C%20saya%20nak%20order%20Beaut%C3%A9%20Colla%20Booster">Order Melalui WhatsApp</a>
+        <p class="disclaimer">Penafian: Produk ini ialah suplemen/makanan tambahan dan bukan bertujuan untuk mendiagnosis, merawat, menyembuh atau mencegah sebarang penyakit. Keputusan individu mungkin berbeza.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="brand">ISHA<small>EMPIRE</small></div>
+      <p><strong>Isha Osman</strong> | Founder, ISHA EMPIRE</p>
+      <p>Health • Wellness • Beauty • Lifestyle</p>
+      <p><em>Feel Good. Look Great. Live Better.</em></p>
+      <p style="font-size:12px;color:#b6a89d;margin-top:18px">Independent product sharing. Not an official FARMASI corporate advertisement.</p>
+    </div>
+  </footer>
+
+  <a class="floating" href="https://wa.me/60XXXXXXXXX?text=Hi%20Isha%2C%20saya%20nak%20tanya%20produk">WhatsApp Isha</a>
+</body>
+</html>
