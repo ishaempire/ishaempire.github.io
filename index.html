@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#4a241f">
+<meta name="description" content="Nutriplus Beauté Colla Booster — minuman dark chocolate dengan Hydrolyzed Collagen Type I, II & III, Vitamin C, Biotin, Zinc dan nutrien terpilih.">
+<title>Beauté Colla Booster | ISHA EMPIRE</title>
+<style>
+:root{
+  --cream:#fff9f5;
+  --paper:#fffdfb;
+  --ink:#2b1718;
+  --muted:#755d63;
+  --cocoa:#4a241f;
+  --cocoa2:#24110f;
+  --mauve:#9f5d87;
+  --rose:#edcddd;
+  --gold:#d4ab5f;
+  --green:#08c85d;
+  --line:rgba(102,43,66,.14);
+  --shadow:0 24px 70px rgba(73,27,46,.16)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:
+radial-gradient(circle at 8% 12%,rgba(237,205,221,.32),transparent 24%),
+radial-gradient(circle at 93% 38%,rgba(212,171,95,.12),transparent 22%),
+var(--cream);color:var(--ink);line-height:1.65}
+img,video{max-width:100%;display:block}
+a{text-decoration:none}
+.wrap{width:min(1180px,92%);margin:auto}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.08;margin:0 0 16px;color:var(--ink)}
+h1{font-size:clamp(42px,7vw,82px)}
+h2{font-size:clamp(32px,5vw,54px)}
+h3{font-size:23px}
+p{margin:0 0 16px}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:#a34979}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,249,245,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(212,171,95,.28);box-shadow:0 8px 28px rgba(75,36,31,.06)}
+.nav-in{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-family:Georgia,serif;font-size:22px;font-weight:700;letter-spacing:.28em;color:var(--cocoa)}
+.logo small{display:block;font-family:Arial,sans-serif;font-size:9px;letter-spacing:.34em;color:#be8730;margin-top:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 22px;border-radius:999px;font-weight:850;transition:.25s;box-shadow:0 12px 28px rgba(0,0,0,.08)}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--green);color:#fff;box-shadow:0 14px 34px rgba(8,200,93,.25)}
+.btn-order{background:linear-gradient(135deg,#4a241f,#6b3150);color:#fff;border:1px solid rgba(212,171,95,.55)}
+.btn-soft{background:#fff;color:var(--cocoa);border:1px solid rgba(212,171,95,.42)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+
+.hero{min-height:calc(100svh - 74px);display:grid;align-items:center;padding:46px 0 62px;background:
+radial-gradient(circle at 82% 18%,rgba(229,171,201,.82) 0,transparent 32%),
+radial-gradient(circle at 12% 84%,rgba(212,171,95,.17) 0,transparent 28%),
+linear-gradient(135deg,#fffaf7 0%,#fae6ef 48%,#edc7da 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:44px}
+.hero h1{background:linear-gradient(100deg,#2b1514,#6d2f50 56%,#a45f8b);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(18px,2vw,23px);color:var(--muted);max-width:700px}
+.checks{display:grid;gap:10px;margin:22px 0}
+.checks div{display:flex;gap:10px;align-items:flex-start;font-weight:760}
+.checks b{color:var(--mauve)}
+.video-stage{position:relative;min-height:550px;display:grid;place-items:center}
+.video-shell{position:relative;z-index:2;width:min(430px,92%);border-radius:34px;overflow:hidden;border:1px solid rgba(212,171,95,.55);box-shadow:0 36px 90px rgba(75,36,31,.3);background:#2b1718}
+.video-shell video{width:100%;aspect-ratio:9/16;object-fit:cover}
+.video-stage:before{content:"";position:absolute;width:470px;height:470px;border-radius:50%;background:
+radial-gradient(circle at 35% 28%,rgba(255,255,255,.72),transparent 17%),
+linear-gradient(145deg,#f8ddea 0%,#da96b9 55%,#9e5b85 100%);box-shadow:0 30px 90px rgba(122,50,86,.31),inset 0 0 0 1px rgba(255,255,255,.55)}
+.video-stage:after{content:"";position:absolute;width:510px;height:510px;border-radius:50%;border:1px solid rgba(212,171,95,.52);box-shadow:0 0 52px rgba(212,171,95,.2);animation:ring 4s ease-in-out infinite}
+@keyframes ring{50%{transform:scale(1.035);opacity:.55}}
+
+.section{padding:78px 0}
+.section-head{max-width:790px;margin:0 auto 40px;text-align:center}
+.section-head h2:after{content:"";display:block;width:76px;height:3px;border-radius:999px;margin:18px auto 0;background:linear-gradient(90deg,var(--mauve),var(--gold))}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:linear-gradient(145deg,#fff,#fff9fb);border:1px solid rgba(159,93,135,.17);border-radius:24px;padding:24px;box-shadow:0 18px 48px rgba(88,35,59,.11);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 26px 62px rgba(88,35,59,.18)}
+.icon-wrap{width:54px;height:54px;border-radius:17px;display:grid;place-items:center;background:linear-gradient(145deg,#f8dce9,#e8b7d0);margin-bottom:14px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.65),0 8px 20px rgba(159,93,135,.15)}
+.icon-wrap svg{width:28px;height:28px;stroke:#6f3458;stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.card p{color:var(--muted)}
+
+.dark{background:radial-gradient(circle at 85% 20%,rgba(159,93,135,.34),transparent 28%),linear-gradient(135deg,#2a1212 0%,#4b241f 48%,#5e2948 100%);color:#f8ece7;overflow:hidden}
+.dark h2,.dark h3{color:#fff}
+.dark-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:center}
+.fact{background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.05));border:1px solid rgba(212,171,95,.3);border-radius:20px;padding:20px;margin:12px 0;box-shadow:0 16px 36px rgba(0,0,0,.12)}
+
+.product-intro{display:grid;grid-template-columns:.92fr 1.08fr;gap:42px;align-items:center}
+.product-photo{background:linear-gradient(145deg,#fff,#f7dbe8);border:1px solid rgba(212,171,95,.3);border-radius:30px;padding:18px;box-shadow:var(--shadow)}
+.product-photo img{border-radius:22px;aspect-ratio:1/1;object-fit:cover}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:22px 0}
+.stat{background:linear-gradient(145deg,#fff,#fff5f9);border:1px solid rgba(159,93,135,.18);border-radius:20px;padding:18px;box-shadow:0 10px 26px rgba(93,38,63,.08)}
+.stat strong{display:block;color:#9b4e7b;font-size:26px;line-height:1.08}
+
+.ingredients{background:radial-gradient(circle at 0% 50%,rgba(212,171,95,.14),transparent 25%),linear-gradient(180deg,#fff8fb,#f5dce8 52%,#fff8fb)}
+.ingredient-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.ingredient{display:flex;gap:16px;align-items:flex-start}
+.ingredient .icon-wrap{flex:0 0 54px;margin:0}
+.ingredient b{display:block;font-size:18px;color:var(--cocoa);margin-bottom:4px}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{text-align:center}
+.step .num{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;margin:0 auto 14px;background:linear-gradient(145deg,#6f3458,#3b1c22);color:#fff;font-weight:900;border:2px solid rgba(212,171,95,.65);box-shadow:0 10px 24px rgba(111,52,88,.25)}
+
+.testimonial-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.testimonial{background:#fff;border-radius:25px;overflow:hidden;border:1px solid rgba(212,171,95,.3);box-shadow:0 22px 58px rgba(78,28,48,.17)}
+.testimonial img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.testimonial .copy{padding:18px 20px}
+
+.gallery{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.gallery-main,.gallery-side{display:grid;gap:20px}
+.result{background:#fff;border-radius:24px;overflow:hidden;border:1px solid rgba(212,171,95,.3);box-shadow:0 22px 58px rgba(78,28,48,.17)}
+.result img{width:100%;height:100%;object-fit:cover}
+.result .cap{padding:16px 18px;color:var(--muted);font-size:14px}
+.gallery-main .result img{aspect-ratio:1.15/1}
+.gallery-side .result img{aspect-ratio:1/1}
+
+details{background:linear-gradient(145deg,#fff,#fff7fa);border:1px solid rgba(159,93,135,.18);border-radius:18px;padding:18px 20px;margin:12px 0}
+summary{cursor:pointer;font-weight:850;color:var(--cocoa)}
+details p{margin-top:12px;color:var(--muted)}
+.final{background:radial-gradient(circle at 50% -20%,rgba(212,171,95,.30),transparent 38%),linear-gradient(135deg,#291212,#53243f 55%,#351719);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final .cta-row{justify-content:center}
+footer{text-align:center;padding:30px 16px;background:#231813;color:#decdc5;font-size:13px}
+.sticky{position:fixed;left:10px;right:10px;bottom:10px;z-index:60;display:none;gap:8px}
+.sticky a{flex:1;padding:13px 10px;font-size:14px}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.show{opacity:1;transform:none}
+.note{font-size:13px;color:#806b72}
+
+@media(max-width:880px){
+  .hero-grid,.dark-grid,.product-intro,.gallery{grid-template-columns:1fr}
+  .video-stage{min-height:460px}
+  .video-stage:before{width:350px;height:350px}
+  .video-stage:after{width:380px;height:380px}
+  .grid3{grid-template-columns:1fr 1fr}
+  .ingredient-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .testimonial-grid{grid-template-columns:1fr}
+  .nav .btn{display:none}
+  .sticky{display:flex}
+  body{padding-bottom:78px}
+}
+@media(max-width:560px){
+  .section{padding:58px 0}
+  .grid3,.grid2,.steps,.stats{grid-template-columns:1fr}
+  .hero{padding-top:28px}
+  .video-stage{min-height:410px}
+  .video-stage:before{width:290px;height:290px}
+  .video-stage:after{width:315px;height:315px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <div class="logo">ISHA<small>EMPIRE</small></div>
+    <a class="btn btn-wa" href="https://wa.me/601156883769?text=Assalamualaikum%20Isha.%20Saya%20berminat%20dengan%20Beaut%C3%A9%20Colla%20Booster.%20Boleh%20saya%20tahu%20harga%20dan%20maklumat%20lanjut%3F">WhatsApp Isha</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">Jangan abaikan perubahan kecil pada diri anda</div>
+      <h1>Jika tanda-tanda ini mula berlaku pada anda, teruskan membaca.</h1>
+      <p class="lead">Kulit makin kusam, rambut lebih mudah gugur, kuku cepat rapuh atau sendi terasa kurang selesa? Mungkin tubuh anda sedang memberi isyarat bahawa ia memerlukan perhatian dari dalam.</p>
+      <div class="checks">
+        <div><b>✓</b> Fokus kepada kulit, rambut, kuku dan sendi</div>
+        <div><b>✓</b> Hydrolyzed Collagen Type I, II & III</div>
+        <div><b>✓</b> Dark chocolate — hanya 1 scoop sehari</div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/601156883769?text=Assalamualaikum%20Isha.%20Saya%20berminat%20dengan%20Beaut%C3%A9%20Colla%20Booster.%20Boleh%20saya%20tahu%20harga%20dan%20maklumat%20lanjut%3F">💬 Tanya Isha</a>
+        <a class="btn btn-order" target="_blank" rel="noopener" href="https://www.farmasi.my/ishawellness/product-detail/nutriplus-beaute-colla-booster-chocolate?pid=1002859">🛒 Terus Tempah</a>
+      </div>
+    </div>
+
+    <div class="video-stage reveal">
+      <div class="video-shell">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/product-master.jpg">
+          <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Adakah ini sedang berlaku pada anda?</div>
+      <h2>Jangan abaikan jika anda mula perasan tanda-tanda ini</h2>
+      <p>Kalau lebih daripada satu tanda di bawah terasa dekat dengan diri anda, mungkin sudah tiba masanya untuk memberi lebih perhatian kepada rutin penjagaan dari dalam.</p>
+    </div>
+
+    <div class="grid3">
+      <article class="card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 3c3.8 0 7 3.2 7 7v2c0 5-3.1 9-7 9s-7-4-7-9v-2c0-3.8 3.2-7 7-7Z"/><path d="M9 14c1.6 1.2 4.4 1.2 6 0"/><path d="M9 10h.01M15 10h.01"/><path d="m18.5 4.5.8-1.5.8 1.5 1.5.8-1.5.8-.8 1.5-.8-1.5-1.5-.8Z"/></svg>
+        </div>
+        <h3>Kulit kusam & kering</h3>
+        <p>Kulit terasa kurang lembap dan tidak seanjal dahulu.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M5 8c2-3 5-5 8-5 4 0 6 3 6 7 0 5-3 9-7 11"/><path d="M7 12c3-2 6-2 9 0"/><path d="M8 15c2-1 4-1 6 0"/></svg>
+        </div>
+        <h3>Garis halus mula jelas</h3>
+        <p>Tekstur kulit nampak berubah walaupun rutin luaran masih sama.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 21c-4-3-6-7-6-11a6 6 0 0 1 12 0c0 4-2 8-6 11Z"/><path d="M9 9c1-3 5-3 6 0"/><path d="M12 7v8"/></svg>
+        </div>
+        <h3>Rambut mudah gugur</h3>
+        <p>Rambut terasa kurang kuat dan kurang bermaya.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M8 20h8a3 3 0 0 0 3-3v-5a7 7 0 0 0-14 0v5a3 3 0 0 0 3 3Z"/><path d="M8 10h8"/></svg>
+        </div>
+        <h3>Kuku mudah rapuh</h3>
+        <p>Kuku cepat patah, mengelupas atau kurang kuat.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M8 3v7l-3 3v5a3 3 0 0 0 3 3h2"/><path d="M16 3v7l3 3v5a3 3 0 0 1-3 3h-2"/><path d="M9 12h6"/><path d="M10 15h4"/></svg>
+        </div>
+        <h3>Sendi kurang selesa</h3>
+        <p>Pergerakan selepas aktiviti harian terasa tidak selega dahulu.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M6 3h12l-1 18H7L6 3Z"/><path d="M9 7h6"/><path d="M12 3v4"/></svg>
+        </div>
+        <h3>Mahukan rutin mudah</h3>
+        <p>Tak mahu rutin rumit — cuma sesuatu yang sedap dan senang konsisten.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="wrap dark-grid">
+    <div class="reveal">
+      <div class="eyebrow" style="color:#e3c38c">Kenapa ini boleh berlaku?</div>
+      <h2>Kolagen ialah sebahagian daripada struktur badan</h2>
+      <p>Kolagen ialah protein yang terdapat pada kulit, tisu penghubung dan rawan. Penghasilan kolagen semula jadi badan cenderung berkurang apabila usia meningkat. Sebab itu ramai mula memberi perhatian kepada nutrien yang menyokong pembentukan kolagen dan penjagaan diri dari dalam.</p>
+    </div>
+    <div class="reveal">
+      <div class="fact"><h3>Type I & III</h3><p>Banyak terdapat pada kulit dan tisu penghubung.</p></div>
+      <div class="fact"><h3>Type II</h3><p>Komponen kolagen yang banyak terdapat pada rawan sendi.</p></div>
+      <div class="fact"><h3>Vitamin C</h3><p>Menyokong pembentukan kolagen yang normal dalam badan.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap product-intro">
+    <div class="product-photo reveal"><img src="assets/product-drink.jpg" alt="Beauté Colla Booster bersama minuman dark chocolate"></div>
+    <div class="reveal">
+      <div class="eyebrow">Kenali Beauté Colla Booster</div>
+      <h2>Bukan kolagen untuk kulit sahaja</h2>
+      <p>Formula ini menggabungkan Hydrolyzed Collagen Type I, II & III bersama Biotin, Vitamin C, Zinc dan nutrien terpilih — dalam minuman dark chocolate yang mudah diamalkan setiap hari.</p>
+      <div class="stats">
+        <div class="stat"><strong>10,000mg</strong>Hydrolyzed Collagen</div>
+        <div class="stat"><strong>Type I, II & III</strong>Spektrum kolagen</div>
+        <div class="stat"><strong>2,500mcg</strong>Biotin</div>
+        <div class="stat"><strong>1 scoop</strong>Sehari</div>
+      </div>
+      <p class="note">Rujuk label produk semasa untuk butiran ramuan dan saiz hidangan terkini.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section ingredients">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Apa yang ada dalam formula?</div>
+      <h2>Setiap nutrien ada peranannya</h2>
+    </div>
+
+    <div class="ingredient-grid">
+      <article class="card ingredient reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="12" cy="16" r="3"/><path d="m10 10 1 3m3-3-1 3"/></svg></div>
+        <div><b>Hydrolyzed Collagen Type I, II & III</b><span>Menyokong struktur kulit, tisu penghubung dan rawan sebagai sebahagian daripada pemakanan harian.</span></div>
+      </article>
+      <article class="card ingredient reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></svg></div>
+        <div><b>Vitamin C</b><span>Membantu pembentukan kolagen yang normal dan menyumbang kepada perlindungan antioksidan.</span></div>
+      </article>
+      <article class="card ingredient reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 21c-4-3-6-7-6-11a6 6 0 0 1 12 0c0 4-2 8-6 11Z"/><path d="M12 7v8"/></svg></div>
+        <div><b>Biotin</b><span>Membantu mengekalkan rambut dan kulit yang normal.</span></div>
+      </article>
+      <article class="card ingredient reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M7 7h10v10H7z"/><path d="M9 12h6M12 9v6"/></svg></div>
+        <div><b>Zinc</b><span>Membantu mengekalkan kulit, rambut dan kuku yang normal.</span></div>
+      </article>
+      <article class="card ingredient reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 3s5 5 5 10a5 5 0 0 1-10 0c0-5 5-10 5-10Z"/></svg></div>
+        <div><b>Hyaluronic Acid</b><span>Komponen yang sering dikaitkan dengan kelembapan kulit dan keselesaan sendi.</span></div>
+      </article>
+      <article class="card ingredient reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 3v18M7 8h10M7 16h10"/></svg></div>
+        <div><b>Copper, Selenium & nutrien lain</b><span>Menyokong tisu penghubung normal dan membantu melindungi sel daripada tekanan oksidatif.</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Apa nilai kepada anda?</div>
+      <h2>Satu rutin, beberapa sokongan utama</h2>
+    </div>
+    <div class="grid3">
+      <article class="card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 3c3.8 0 7 3.2 7 7v2c0 5-3.1 9-7 9s-7-4-7-9v-2c0-3.8 3.2-7 7-7Z"/><path d="m18.5 4.5.8-1.5.8 1.5 1.5.8-1.5.8-.8 1.5-.8-1.5-1.5-.8Z"/></svg></div><h3>Kulit</h3><p>Menyokong rutin penjagaan kulit dari dalam melalui kolagen, Vitamin C dan Zinc.</p></article>
+      <article class="card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 21c-4-3-6-7-6-11a6 6 0 0 1 12 0c0 4-2 8-6 11Z"/><path d="M12 7v8"/></svg></div><h3>Rambut</h3><p>Biotin dan Zinc membantu mengekalkan rambut yang normal.</p></article>
+      <article class="card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M8 20h8a3 3 0 0 0 3-3v-5a7 7 0 0 0-14 0v5a3 3 0 0 0 3 3Z"/></svg></div><h3>Kuku</h3><p>Biotin dan Zinc menyokong kuku supaya kekal normal dan terjaga.</p></article>
+      <article class="card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M8 3v7l-3 3v5a3 3 0 0 0 3 3h2M16 3v7l3 3v5a3 3 0 0 1-3 3h-2M9 12h6"/></svg></div><h3>Sendi</h3><p>Type II collagen dan Hyaluronic Acid melengkapkan rutin sokongan sendi.</p></article>
+      <article class="card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Antioksidan</h3><p>Vitamin C, Vitamin E dan Selenium membantu melindungi sel daripada tekanan oksidatif.</p></article>
+      <article class="card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M4 8h16v8H4z"/><path d="m8 8 2 8m4-8 2 8"/></svg></div><h3>Mudah konsisten</h3><p>Rasa dark chocolate menjadikannya lebih mudah dijadikan rutin harian.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#fff">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Cara pengambilan</div><h2>Ringkas. Hanya 1 scoop sehari.</h2></div>
+    <div class="steps">
+      <article class="card step reveal"><div class="num">1</div><h3>Ambil 1 scoop</h3><p>Gunakan scoop yang disediakan.</p></article>
+      <article class="card step reveal"><div class="num">2</div><h3>Campurkan</h3><p>Masukkan ke dalam sekitar 150–200ml air sejuk atau suam.</p></article>
+      <article class="card step reveal"><div class="num">3</div><h3>Amalkan</h3><p>Minum sekali sehari secara konsisten mengikut arahan label.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#f0e5eb">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Pengalaman pengguna</div>
+      <h2>Feedback sebenar pelanggan</h2>
+      <p>Hasil boleh berbeza mengikut keadaan tubuh, pemakanan, gaya hidup dan konsistensi setiap individu.</p>
+    </div>
+    <div class="testimonial-grid">
+      <article class="testimonial reveal">
+        <img src="assets/testimonial-joint.jpg" alt="Testimoni berkaitan keselesaan kaki dan pergerakan">
+        <div class="copy"><h3>Keselesaan kaki & pergerakan</h3><p>Pengguna berkongsi pengalaman peribadi selepas mengambil produk. Testimoni ini bukan jaminan hasil dan bukan tuntutan rawatan.</p></div>
+      </article>
+      <article class="testimonial reveal">
+        <img src="assets/testimonial-hair.jpg" alt="Testimoni berkaitan rambut gugur">
+        <div class="copy"><h3>Rambut terasa lebih terjaga</h3><p>Pengguna berkongsi pengalaman rambut yang dirasakan semakin kurang gugur selepas penggunaan konsisten.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Result visual</div><h2>Perubahan yang dikongsikan pengguna</h2></div>
+    <div class="gallery">
+      <div class="gallery-main">
+        <article class="result reveal"><img src="assets/result-skin.jpg" alt="Contoh perubahan kulit pengguna"><div class="cap">Contoh pengalaman pengguna pada kulit. Keputusan setiap individu tidak semestinya sama.</div></article>
+      </div>
+      <div class="gallery-side">
+        <article class="result reveal"><img src="assets/result-hair.jpg" alt="Contoh perubahan rambut pengguna"><div class="cap">Contoh pengalaman pengguna pada rambut dan penampilan kulit.</div></article>
+        <article class="result reveal"><img src="assets/result-hand.jpg" alt="Contoh perubahan tangan dan kuku pengguna"><div class="cap">Contoh pengalaman pengguna selepas penggunaan konsisten.</div></article>
+      </div>
+    </div>
+    <p class="note" style="text-align:center;margin-top:18px">Testimoni ialah pengalaman individu dan bukan jaminan hasil. Produk ini bukan bertujuan mendiagnosis, merawat atau menyembuhkan penyakit.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap" style="max-width:850px">
+    <div class="section-head reveal"><div class="eyebrow">Soalan lazim</div><h2>Sebelum anda mula</h2></div>
+    <details class="reveal"><summary>Berapa lama satu bekas?</summary><p>Satu bekas mengandungi kira-kira 15 sajian, bergantung pada saiz hidangan yang dinyatakan pada label.</p></details>
+    <details class="reveal"><summary>Bila masa sesuai diminum?</summary><p>Boleh diambil pada masa yang mudah untuk anda konsisten. Ikut arahan label.</p></details>
+    <details class="reveal"><summary>Boleh campur dengan air panas?</summary><p>Gunakan air sejuk atau suam. Elakkan air yang terlalu panas.</p></details>
+    <details class="reveal"><summary>Berapa lama untuk nampak perubahan?</summary><p>Tiada tempoh yang sama untuk semua orang. Hasil dipengaruhi keadaan individu, pemakanan, gaya hidup dan konsistensi.</p></details>
+    <details class="reveal"><summary>Siapa perlu mendapatkan nasihat profesional dahulu?</summary><p>Individu hamil, menyusu, mempunyai alahan bovine, penyakit kronik atau sedang mengambil ubat perlu berbincang dengan doktor atau ahli farmasi sebelum mengambil suplemen.</p></details>
+  </div>
+</section>
+
+<section class="section final">
+  <div class="wrap reveal">
+    <div class="eyebrow" style="color:#e2c28d">Rasa ia sesuai untuk rutin anda?</div>
+    <h2>Pilih cara yang paling selesa</h2>
+    <p>Masih ada soalan? WhatsApp Isha. Sudah yakin? Teruskan tempahan melalui laman rasmi.</p>
+    <div class="cta-row">
+      <a class="btn btn-wa" href="https://wa.me/601156883769?text=Assalamualaikum%20Isha.%20Saya%20berminat%20dengan%20Beaut%C3%A9%20Colla%20Booster.%20Boleh%20saya%20tahu%20harga%20dan%20maklumat%20lanjut%3F">💬 Tanya Harga & Stok</a>
+      <a class="btn btn-soft" target="_blank" rel="noopener" href="https://www.farmasi.my/ishawellness/product-detail/nutriplus-beaute-colla-booster-chocolate?pid=1002859">🛒 Tempah di Laman Rasmi</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>ISHA EMPIRE</strong><br>
+  Health • Wellness • Beauty • Lifestyle<br>
+  <em>Feel Good. Look Great. Live Better.</em>
+</footer>
+
+<div class="sticky">
+  <a class="btn btn-wa" href="https://wa.me/601156883769?text=Assalamualaikum%20Isha.%20Saya%20berminat%20dengan%20Beaut%C3%A9%20Colla%20Booster.%20Boleh%20saya%20tahu%20harga%20dan%20maklumat%20lanjut%3F">WhatsApp</a>
+  <a class="btn btn-order" target="_blank" rel="noopener" href="https://www.farmasi.my/ishawellness/product-detail/nutriplus-beaute-colla-booster-chocolate?pid=1002859">Tempah</a>
+</div>
+
+<script>
+const io=new IntersectionObserver(entries=>{
+  entries.forEach((entry,i)=>{
+    if(entry.isIntersecting){
+      entry.target.style.transitionDelay=((i%6)*45)+'ms';
+      entry.target.classList.add('show');
+    }
+  })
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
